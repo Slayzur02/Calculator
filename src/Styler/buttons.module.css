@@ -1,0 +1,14 @@
+.buttons {
+	font-size: 20px;
+	color: white;
+	background-color: #deaf23;
+	text-align: center;
+	border-color: black;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+.displayer { 
+	grid-column: 1/4;
+	background-color: #98f706;	
+	border: 1.5px solid black;
+}
