@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Button} from 'semantic-ui-react'
 
 import Styling from '../Styler/grid.module.css'
 
@@ -8,9 +9,9 @@ class Equal extends Component {
 	}
 	render() {
 		return (
-			<div onClick = {this.handleCalculate} className = {Styling.equal}>
+			<Button color = 'green' onClick = {this.handleCalculate} className = {Styling.equal}>
 				=
-			</div>
+			</Button>
 		);
 	}
 }

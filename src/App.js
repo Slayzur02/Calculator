@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
-import Button from './Rcomponents/Button.js'
+import {Button} from 'semantic-ui-react'
+import { Responsive, Segment } from 'semantic-ui-react'
+
+import ButtonMade from './Rcomponents/Button.js'
 import Displayer from './Rcomponents/Displayer.js'
 import Equal from './Rcomponents/Equal.js'
 import Grid from './Styler/grid.module.css'
@@ -30,26 +33,30 @@ class App extends Component {
   }
   render() {
     return (
+      <div >
       <div className={Grid.grider}>
-        <p className = {Grid.answer}>Answer: {this.state.answer}</p>
-        
+        <div className = {Grid.answer}>
+          <div class = 'ui inverted segment' >Answer: {this.state.answer}</div>      
+        </div>
         <Displayer display = {this.state.display}/>
-        <Button syntax = '0' addToDisplay = {this.addToDisplay}/>
-        <Button syntax = '1' addToDisplay = {this.addToDisplay}/>
-        <Button syntax = '2' addToDisplay = {this.addToDisplay}/>
-        <Button syntax = '3' addToDisplay = {this.addToDisplay}/>
-        <Button syntax = '4' addToDisplay = {this.addToDisplay}/>
-        <Button syntax = '5' addToDisplay = {this.addToDisplay}/>
-        <Button syntax = '6' addToDisplay = {this.addToDisplay}/>
-        <Button syntax = '7' addToDisplay = {this.addToDisplay}/>
-        <Button syntax = '8' addToDisplay = {this.addToDisplay}/>
-        <Button syntax = '9' addToDisplay = {this.addToDisplay}/>
-        <Button syntax = '+' addToDisplay = {this.addToDisplay}/>
-        <Button syntax = '-' addToDisplay = {this.addToDisplay}/>
-        <Button syntax = '*' addToDisplay = {this.addToDisplay}/>
-        <Button syntax = '/' addToDisplay = {this.addToDisplay}/>
-        <Button syntax = 'clear' addToDisplay = {this.clear}/>
+            <ButtonMade syntax = '0' addToDisplay = {this.addToDisplay}/>
+            <ButtonMade syntax = '1' addToDisplay = {this.addToDisplay}/>
+            <ButtonMade syntax = '2' addToDisplay = {this.addToDisplay}/>
+            <ButtonMade syntax = '3' addToDisplay = {this.addToDisplay}/>
+            <ButtonMade syntax = '4' addToDisplay = {this.addToDisplay}/>
+            <ButtonMade syntax = '5' addToDisplay = {this.addToDisplay}/>
+            <ButtonMade syntax = '6' addToDisplay = {this.addToDisplay}/>
+            <ButtonMade syntax = '7' addToDisplay = {this.addToDisplay}/>
+            <ButtonMade syntax = '8' addToDisplay = {this.addToDisplay}/>
+            <ButtonMade syntax = '9' addToDisplay = {this.addToDisplay}/>
+            <ButtonMade syntax = '+' addToDisplay = {this.addToDisplay}/>
+            <ButtonMade syntax = '-' addToDisplay = {this.addToDisplay}/>
+            <ButtonMade syntax = '*' addToDisplay = {this.addToDisplay}/>
+            <ButtonMade syntax = '/' addToDisplay = {this.addToDisplay}/>
+            <ButtonMade syntax = 'clear' addToDisplay = {this.clear}/>
+        
         <Equal answer = {this.state.answer} calculate = {this.calculate}/>
+      </div>
       </div>
     );
   }

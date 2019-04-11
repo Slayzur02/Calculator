@@ -1,6 +1,6 @@
 .grider{
 	display: grid;
-	grid-template-columns: 70px 70px 70px;
+	grid-template-columns: 90px 90px 90px;
 	grid-gap: 10px;
 	justify-content: center;
 
@@ -11,9 +11,8 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-bottom: -3px;
-	background-color: #98f706;
+	background-color: #00baff;
 	align-content: stretch;
-	border: 1.5px solid black;
 }
 .equal{
 	font-size: 30px;

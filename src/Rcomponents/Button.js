@@ -1,18 +1,19 @@
 import React, {Component} from 'react';
+import {Button} from 'semantic-ui-react'
 
 import ButtonStyling from '../Styler/buttons.module.css'
 
-class Button extends Component {
+class ButtonMade extends Component {
 	handleAddToDisplay = () => {
 		this.props.addToDisplay(this.props.syntax)
 	}
     render() {
         return (
-            <div className = {ButtonStyling.buttons} onClick={this.handleAddToDisplay}>
-            	<p  >{this.props.syntax}</p>
-            </div>
+            <Button className = 'ui circular'color = 'green'className = {ButtonStyling.buttons} onClick={this.handleAddToDisplay}>
+            	<p >{this.props.syntax}</p>
+            </Button>
         );
     }
 }
 
-export default Button;
+export default ButtonMade;
